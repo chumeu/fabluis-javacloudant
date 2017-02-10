@@ -1,0 +1,14 @@
+applications:
+- path: JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: fabluis-javacloudant
+  host: fabluis-javacloudant
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - fabluis-javacloudant-cloudantNoSQLDB
+  - Monitoring and Analytics-ra
+  - New Relic-sd
+  - Auto-Scaling-ej
